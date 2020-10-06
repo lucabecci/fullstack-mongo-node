@@ -16,7 +16,7 @@
     "@commitlint/config-conventional": "^11.0.0",
     "dotenv": "^8.2.0",
     "eslint": "^7.10.0",
-    "handlebars": "^4.7.6",
+    "handlebars": "^4.5.0",
     "husky": "^4.3.0",
     "nodemon": "^2.0.4",
     "npm-check-updates": "^9.0.4",
@@ -25,7 +25,7 @@
   "husky": {
     "hooks": {
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
-      "pre-commit": "npx prettier --write src/* && npx eslint --fix src/*"
+      "pre-commit": "npx prettier --write src/*"
     }
   },
   "dependencies": {
@@ -36,6 +36,7 @@
     "express-session": "^1.17.1",
     "method-override": "^3.0.0",
     "mongoose": "^5.10.8",
+    "morgan": "^1.10.0",
     "passport": "^0.4.1",
     "passport-local": "^1.0.0"
   }

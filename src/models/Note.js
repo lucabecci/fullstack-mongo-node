@@ -3,7 +3,7 @@ const { Schema, model } = require("mongoose");
 const NoteSchema = new Schema(
   {
     title: {
-      tyoe: String,
+      type: String,
       required: true,
     },
     description: {
