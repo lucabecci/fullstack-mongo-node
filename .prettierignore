@@ -8,3 +8,5 @@ commitlint.config.js
 package.json
 package-lock.json
 .eslintrc.js
+src/public
+src/views
