@@ -1,8 +1,8 @@
 const express = require("express");
 const expressHandlebars = require("express-handlebars");
 const path = require("path");
-const morgan = require('morgan')
-const methodOverride = require('method-override')
+const morgan = require("morgan");
+const methodOverride = require("method-override");
 // INITIALIZATIONS
 const app = express();
 
@@ -24,14 +24,14 @@ app.set("view engine", ".hbs");
 
 // MIDDLEWARES
 app.use(express.urlencoded({ extended: false }));
-app.use(morgan('dev'))
-app.use(methodOverride('_method'))
+app.use(morgan("dev"));
+app.use(methodOverride("_method"));
 
 // GLOBAL VARS
 
 // ROUTES
 app.use(require("./routes/index.routes"));
-app.use(require('./routes/notes.routes'))
+app.use(require("./routes/notes.routes"));
 // STATIC FILES
 
 // eslint-disable-next-line no-undef
